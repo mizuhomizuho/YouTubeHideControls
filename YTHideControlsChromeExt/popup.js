@@ -8,12 +8,14 @@ document.querySelectorAll('a').forEach((el) => {
 
         chrome.tabs.query({}, (tabs) => {
 
-            for (let tab of tabs) {
+            for (const tab of tabs) {
 
                 if (tab.active) {
 
-                    chrome.tabs.update(tab.id, {
-                        url: el.href
+                    chrome.tabs.sendMessage(tab.id, {act: 'toggleControls'}, (response) => {
+                        if (!chrome.runtime.lastError) {
+                            console.log(response, 'Meow response')
+                        }
                     })
 
                     return
