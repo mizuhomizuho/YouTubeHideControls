@@ -8,6 +8,8 @@
 .ytp-fullscreen-button,
 .ytp-chapters-container,
 .ytp-time-separator,
-.ytp-time-duration {
+.ytp-time-duration,
+#masthead #background,
+#masthead #container {
     display: none !important;
 }
