@@ -1,0 +1,13 @@
+.ytp-chrome-top,
+.ytp-progress-bar-padding,
+.ytp-prev-button,
+.ytp-play-button,
+.ytp-next-button,
+.ytp-subtitles-button,
+.ytp-miniplayer-button,
+.ytp-fullscreen-button,
+.ytp-chapters-container,
+.ytp-time-separator,
+.ytp-time-duration {
+    display: none !important;
+}
